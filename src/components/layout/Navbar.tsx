@@ -32,7 +32,7 @@ export function Navbar() {
         {/* LOGO LEFT */}
         <div className="flex-1">
           <Link href="/" className="flex items-center">
-            <img src="/promarcas/images/promarcas_imagotipo.png" alt="Logo" className={cn(
+            <img src="/images/promarcas_imagotipo.png" alt="Logo" className={cn(
               "transition-all duration-500 ease-in-out transform w-auto",
               scrolled ? "h-9 scale-95" : "h-14 scale-100",
               !scrolled && !isContacto && "brightness-0 invert"

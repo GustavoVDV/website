@@ -11,7 +11,7 @@ export default function LitigiosResolucionConflictosPage() {
       <div 
         className="w-full min-h-[100svh] flex items-center justify-center relative overflow-hidden bg-primary"
         style={{
-          backgroundImage: "linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('/promarcas/images/promarcas_litigios.jpg')",
+          backgroundImage: "linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('/images/promarcas_litigios.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat"

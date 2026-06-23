@@ -17,7 +17,7 @@ export default function ContactoPage() {
     <div className="w-full min-h-screen bg-white pt-48 pb-48">
       <div className="page-container max-w-screen-xl mx-auto px-4">
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-20">
-          
+
           {/* Left Column: Info */}
           <div className="flex-1 lg:max-w-md pt-4">
             <motion.div
@@ -44,7 +44,7 @@ export default function ContactoPage() {
                         <span className="text-lg font-medium">{phone}</span>
                       </div>
                     </div>
-                    
+
                     <div className="flex items-center gap-4 text-gray-600">
                       <Mail className="w-5 h-5 text-primary/60" />
                       <div>
@@ -72,24 +72,24 @@ export default function ContactoPage() {
                   <div className="flex flex-col md:flex-row gap-5">
                     <div className="flex-1 space-y-2">
                       <Label htmlFor="firstname" className="text-sm font-bold text-gray-400">Nombre</Label>
-                      <Input 
-                        type="text" 
-                        id="firstname" 
+                      <Input
+                        type="text"
+                        id="firstname"
                         name="Nombre"
-                        placeholder="Formulario deshabilitado temporalmente" 
-                        className="h-10 bg-gray-50 border-0 border-b border-gray-200 rounded-none px-0 shadow-none text-gray-400 cursor-not-allowed" 
+                        placeholder="Formulario deshabilitado temporalmente"
+                        className="h-10 bg-gray-50 border-0 border-b border-gray-200 rounded-none px-0 shadow-none text-gray-400 cursor-not-allowed"
                         required
                         disabled
                       />
                     </div>
                     <div className="flex-1 space-y-1">
                       <Label htmlFor="lastname" className="text-sm font-bold text-gray-400">Apellido</Label>
-                      <Input 
-                        type="text" 
-                        id="lastname" 
+                      <Input
+                        type="text"
+                        id="lastname"
                         name="Apellido"
-                        placeholder="Formulario deshabilitado" 
-                        className="h-10 bg-gray-50 border-0 border-b border-gray-200 rounded-none px-0 shadow-none text-gray-400 cursor-not-allowed" 
+                        placeholder="Formulario deshabilitado"
+                        className="h-10 bg-gray-50 border-0 border-b border-gray-200 rounded-none px-0 shadow-none text-gray-400 cursor-not-allowed"
                         disabled
                       />
                     </div>
@@ -97,12 +97,12 @@ export default function ContactoPage() {
 
                   <div className="space-y-1">
                     <Label htmlFor="email" className="text-sm font-bold text-gray-400">Correo Electrónico</Label>
-                    <Input 
-                      type="email" 
-                      id="email" 
+                    <Input
+                      type="email"
+                      id="email"
                       name="Correo"
-                      placeholder="Formulario deshabilitado" 
-                      className="h-10 bg-gray-50 border-0 border-b border-gray-200 rounded-none px-0 shadow-none text-gray-400 cursor-not-allowed" 
+                      placeholder="Formulario deshabilitado"
+                      className="h-10 bg-gray-50 border-0 border-b border-gray-200 rounded-none px-0 shadow-none text-gray-400 cursor-not-allowed"
                       required
                       disabled
                     />
@@ -110,23 +110,23 @@ export default function ContactoPage() {
 
                   <div className="space-y-1">
                     <Label htmlFor="subject" className="text-sm font-bold text-gray-400">Asunto</Label>
-                    <Input 
-                      type="text" 
-                      id="subject" 
+                    <Input
+                      type="text"
+                      id="subject"
                       name="subject"
-                      placeholder="Formulario deshabilitado" 
-                      className="h-10 bg-gray-50 border-0 border-b border-gray-200 rounded-none px-0 shadow-none text-gray-400 cursor-not-allowed" 
+                      placeholder="Formulario deshabilitado"
+                      className="h-10 bg-gray-50 border-0 border-b border-gray-200 rounded-none px-0 shadow-none text-gray-400 cursor-not-allowed"
                       disabled
                     />
                   </div>
 
                   <div className="space-y-1">
                     <Label htmlFor="message" className="text-sm font-bold text-gray-400">Mensaje</Label>
-                    <Textarea 
-                      id="message" 
+                    <Textarea
+                      id="message"
                       name="Mensaje"
-                      placeholder="El formulario de contacto está deshabilitado temporalmente por mantenimiento." 
-                      className="h-10 bg-gray-50 border-0 border-b border-gray-200 rounded-none px-0 shadow-none text-gray-400 resize-none overflow-hidden cursor-not-allowed" 
+                      placeholder="El formulario de contacto está deshabilitado temporalmente por mantenimiento."
+                      className="h-10 bg-gray-50 border-0 border-b border-gray-200 rounded-none px-0 shadow-none text-gray-400 resize-none overflow-hidden cursor-not-allowed"
                       required
                       disabled
                     />

@@ -7,7 +7,7 @@ export function Footer() {
         <div className="flex flex-col items-center text-center">
            {/* LOGO */}
            <div className="mb-10">
-              <img src="/promarcas/images/promarcas_imagotipo.png" alt="Logo Estudio Jurídico" className="h-16 w-auto" />
+              <img src="/images/promarcas_imagotipo.png" alt="Logo Estudio Jurídico" className="h-16 w-auto" />
            </div>
            
            <div className="flex flex-wrap justify-center gap-8 mb-12 text-sm text-gray-500 font-medium">

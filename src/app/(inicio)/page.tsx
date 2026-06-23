@@ -70,7 +70,7 @@ function Hero() {
 
   const slides = [
     {
-      image: "/promarcas/images/promarcas_hero.png",
+      image: "/images/promarcas_hero.png",
       content: (
         <div className="flex gap-10 flex-col items-center w-full">
           <h1 className="text-5xl md:text-7xl max-w-4xl tracking-tighter text-center font-regular">
@@ -99,7 +99,7 @@ function Hero() {
       )
     },
     {
-      image: "/promarcas/images/promarcas_hero2.png",
+      image: "/images/promarcas_hero2.png",
       content: (
         <div className="flex flex-col items-center justify-center max-w-5xl mx-auto px-4 mt-4 w-full">
           <p className="text-xl md:text-3xl leading-relaxed tracking-tight text-white text-center font-light">
@@ -109,7 +109,7 @@ function Hero() {
       )
     },
     {
-      image: "/promarcas/images/promarcas_hero3.png",
+      image: "/images/promarcas_hero3.png",
       content: (
         <div className="flex flex-col items-center justify-center max-w-5xl mx-auto px-4 mt-4 w-full">
           <p className="text-xl md:text-3xl leading-relaxed tracking-tight text-white text-center font-light">
