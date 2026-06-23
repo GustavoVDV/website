@@ -68,73 +68,76 @@ export default function ContactoPage() {
               className="bg-white rounded-xl shadow-[0_2px_20px_rgb(0,0,0,0.06)] border border-gray-100 p-6 md:p-8"
             >
               <form action="mailto:contacto@promarcas.com" method="POST" encType="text/plain" className="space-y-5">
-                <div className="flex flex-col md:flex-row gap-5">
-                  <div className="flex-1 space-y-2">
-                    <Label htmlFor="firstname" className="text-sm font-bold text-[#111]">Nombre</Label>
+                <fieldset disabled className="space-y-5 group">
+                  <div className="flex flex-col md:flex-row gap-5">
+                    <div className="flex-1 space-y-2">
+                      <Label htmlFor="firstname" className="text-sm font-bold text-gray-400">Nombre</Label>
+                      <Input 
+                        type="text" 
+                        id="firstname" 
+                        name="Nombre"
+                        placeholder="Formulario deshabilitado temporalmente" 
+                        className="h-10 bg-gray-50 border-0 border-b border-gray-200 rounded-none px-0 shadow-none text-gray-400 cursor-not-allowed" 
+                        required
+                        disabled
+                      />
+                    </div>
+                    <div className="flex-1 space-y-1">
+                      <Label htmlFor="lastname" className="text-sm font-bold text-gray-400">Apellido</Label>
+                      <Input 
+                        type="text" 
+                        id="lastname" 
+                        name="Apellido"
+                        placeholder="Formulario deshabilitado" 
+                        className="h-10 bg-gray-50 border-0 border-b border-gray-200 rounded-none px-0 shadow-none text-gray-400 cursor-not-allowed" 
+                        disabled
+                      />
+                    </div>
+                  </div>
+
+                  <div className="space-y-1">
+                    <Label htmlFor="email" className="text-sm font-bold text-gray-400">Correo Electrónico</Label>
                     <Input 
-                      type="text" 
-                      id="firstname" 
-                      name="Nombre"
-                      placeholder="Escriba su nombre" 
-                      className="h-10 bg-transparent border-0 border-b border-gray-200 rounded-none px-0 shadow-none focus-visible:ring-0 focus-visible:border-primary text-base" 
+                      type="email" 
+                      id="email" 
+                      name="Correo"
+                      placeholder="Formulario deshabilitado" 
+                      className="h-10 bg-gray-50 border-0 border-b border-gray-200 rounded-none px-0 shadow-none text-gray-400 cursor-not-allowed" 
                       required
+                      disabled
                     />
                   </div>
-                  <div className="flex-1 space-y-1">
-                    <Label htmlFor="lastname" className="text-sm font-bold text-[#111]">Apellido</Label>
+
+                  <div className="space-y-1">
+                    <Label htmlFor="subject" className="text-sm font-bold text-gray-400">Asunto</Label>
                     <Input 
                       type="text" 
-                      id="lastname" 
-                      name="Apellido"
-                      placeholder="Escriba su apellido" 
-                      className="h-10 bg-transparent border-0 border-b border-gray-200 rounded-none px-0 shadow-none focus-visible:ring-0 focus-visible:border-primary text-base" 
+                      id="subject" 
+                      name="subject"
+                      placeholder="Formulario deshabilitado" 
+                      className="h-10 bg-gray-50 border-0 border-b border-gray-200 rounded-none px-0 shadow-none text-gray-400 cursor-not-allowed" 
+                      disabled
                     />
                   </div>
-                </div>
 
-                <div className="space-y-1">
-                  <Label htmlFor="email" className="text-sm font-bold text-[#111]">Correo Electrónico</Label>
-                  <Input 
-                    type="email" 
-                    id="email" 
-                    name="Correo"
-                    placeholder="ejemplo@correo.com" 
-                    className="h-10 bg-transparent border-0 border-b border-gray-200 rounded-none px-0 shadow-none focus-visible:ring-0 focus-visible:border-primary text-base" 
-                    required
-                  />
-                </div>
+                  <div className="space-y-1">
+                    <Label htmlFor="message" className="text-sm font-bold text-gray-400">Mensaje</Label>
+                    <Textarea 
+                      id="message" 
+                      name="Mensaje"
+                      placeholder="El formulario de contacto está deshabilitado temporalmente por mantenimiento." 
+                      className="h-10 bg-gray-50 border-0 border-b border-gray-200 rounded-none px-0 shadow-none text-gray-400 resize-none overflow-hidden cursor-not-allowed" 
+                      required
+                      disabled
+                    />
+                  </div>
 
-                <div className="space-y-1">
-                  <Label htmlFor="subject" className="text-sm font-bold text-[#111]">Asunto</Label>
-                  <Input 
-                    type="text" 
-                    id="subject" 
-                    name="subject"
-                    placeholder="Tema de interés" 
-                    className="h-10 bg-transparent border-0 border-b border-gray-200 rounded-none px-0 shadow-none focus-visible:ring-0 focus-visible:border-primary text-base" 
-                  />
-                </div>
-
-                <div className="space-y-1">
-                  <Label htmlFor="message" className="text-sm font-bold text-[#111]">Mensaje</Label>
-                  <Textarea 
-                    id="message" 
-                    name="Mensaje"
-                    placeholder="Escriba aquí su consulta detallada..." 
-                    className="h-10 bg-transparent border-0 border-b border-gray-200 rounded-none px-0 shadow-none focus-visible:ring-0 focus-visible:border-primary text-base resize-none overflow-hidden" 
-                    onInput={(e) => {
-                      e.currentTarget.style.height = "auto";
-                      e.currentTarget.style.height = e.currentTarget.scrollHeight + "px";
-                    }}
-                    required
-                  />
-                </div>
-
-                <div className="mt-4">
-                  <Button type="submit" size="lg" className="w-full h-12 text-base font-semibold bg-primary text-white hover:bg-primary/90 hover:shadow-2xl hover:scale-105 active:scale-95 transition-all duration-300 border border-white/20">
-                    Enviar mensaje <MoveRight className="w-5 h-5 ml-2" />
-                  </Button>
-                </div>
+                  <div className="mt-4">
+                    <Button type="button" disabled size="lg" className="w-full h-12 text-base font-semibold bg-gray-300 text-gray-500 cursor-not-allowed border border-gray-200">
+                      Formulario Bloqueado <MoveRight className="w-5 h-5 ml-2" />
+                    </Button>
+                  </div>
+                </fieldset>
               </form>
             </motion.div>
           </div>
